@@ -10,6 +10,16 @@ Welcome to the **3D Anime Scene Searcher** project! This web application allows 
 - **Custom Video Player**: A custom video player with mute/unmute controls, progress bar, and more.
 - **3D Background**: Stunning 3D background using Three.js and React Three Fiber to enhance user experience.
 
+### Screenshots
+
+Here are some screenshots of the application:
+
+#### Home Page
+![Home Page](./public/image1.png "Home Page")
+
+#### Results Page
+![Results Page](./public/image2.png "Results Page")
+
 ## 🛠️ Technologies Used
 
 - **React**: A powerful JavaScript library for building user interfaces.
