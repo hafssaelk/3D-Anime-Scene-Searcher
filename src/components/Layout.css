@@ -1,0 +1,39 @@
+/* Layout.css */
+
+/* General container styling */
+.container {
+	width: auto;
+	max-width: 680px;
+	margin: auto;
+  }
+  
+  /* Footer styling */
+  footer {
+	  background-color: #333;
+	  color: #fff;
+	  padding: 20px 0;
+	  text-align: center;
+	  margin-top: 40px;
+  }
+  
+  .section {
+	  margin-bottom: 20px;
+  }
+  
+  .sectionHeader {
+	  font-size: 1.5rem;
+	  margin-bottom: 10px;
+  }
+  
+  .sectionItem {
+	  margin-bottom: 8px;
+  }
+  
+  .sectionItem a {
+	  color: #1e90ff;
+	  text-decoration: none;
+  }
+  
+  .sectionItem a:hover {
+	  text-decoration: underline;
+  }

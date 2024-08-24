@@ -1,0 +1,23 @@
+/* global.css */
+
+:root {
+	--shadow-color: rgba(0, 0, 0, 0.5);
+	--result-draw-color: #333;
+	--result-line-color: #444;
+	--result-main-color: #222;
+	--theme-main-color: #1e90ff;
+	--theme-strong-color: #ffffff;
+	--theme-weak-color: #cccccc;
+	--red-color: #ff5e57;
+	--green-color: #4caf50;
+	--text-main-color: #ffffff;
+  }
+  
+  /* Global Styles */
+  body {
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+	background-color: var(--result-main-color);
+	color: var(--text-main-color);
+  }
+  

@@ -1,0 +1,117 @@
+/* InfoPane.css */
+.info-pane {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 550px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--text-strong-color);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 100;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 5px var(--shadow-color);
+}
+
+.player-pane {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.player {
+    width: 100%;
+    border-radius: 8px;
+	background: #000;
+	display: block;
+	transition: all 100ms ease-out;
+}
+
+.drop-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.info-title {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    padding: 0 0.5rem;
+    color: var(--theme-strong-color);
+    border-left: 3px double var(--theme-strong-color);
+    margin-bottom: 10px;
+}
+
+.info-subtitle {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 0 0.5rem 0.2rem 0.7rem;
+    color: var(--theme-main-color);
+    border-left: 3px double var(--theme-strong-color);
+    margin-bottom: 10px;
+}
+
+.divider {
+    border-bottom: 1px dashed var(--theme-weak-color);
+    margin: 10px 0;
+}
+
+.details {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details table {
+    width: 100%;
+    border-spacing: 10px 0;
+    border-collapse: separate;
+}
+
+.details td {
+    border-bottom: 1px dotted var(--shadow-color);
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
+.details tr:last-child td {
+    border-bottom: none;
+}
+
+.studio-link, .external-link {
+    color: var(--theme-strong-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.studio-link:hover, .external-link:hover {
+    text-decoration: underline;
+}
+
+.poster {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.poster img {
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    height: auto;
+    border-radius: 8px;
+    transition: all 300ms ease-out
+}
+
+.foot-notes {
+    text-align: right;
+    font-size: 0.6rem;
+    line-height: 0.6rem;
+    padding: 0.3rem;
+}

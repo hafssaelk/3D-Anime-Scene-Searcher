@@ -1,0 +1,164 @@
+/* General Page Styles */
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	font-family: 'Arial', sans-serif;
+  }
+  
+  /* Section wrapping the entire Canvas and Search Bar */
+  section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(120deg, #89f7fe, #66a6ff);
+  }
+  
+  /* Search Bar Styles */
+  .search-bar {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	padding: 10px 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-bar input[type="text"] {
+	background: transparent;
+	border: none;
+	color: #ffffff;
+	padding: 8px 10px;
+	font-size: 16px;
+	outline: none;
+	width: 300px;
+  }
+  
+  .search-bar input[type="file"] {
+	display: none;
+  }
+  
+  .search-bar label {
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 12px;
+	margin-left: 10px;
+	background-color: #f39c12;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+  }
+  
+  .search-bar label:hover {
+	background-color: #e67e22;
+  }
+  
+  /* Loader for 3D Models */
+  .loader {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-size: 18px;
+  }
+  
+  /* Cursor styles for rotating the island */
+  .canvas {
+	cursor: grab;
+  }
+  
+  .canvas:active {
+	cursor: grabbing;
+  }
+  
+  /* Adjustments for mobile screens */
+  @media (max-width: 768px) {
+	.search-bar {
+	  top: 15px;
+	}
+  
+	.search-bar input[type="text"] {
+	  width: 200px;
+	}
+  
+	.search-bar label {
+	  padding: 8px 10px;
+	}
+  }
+
+
+
+
+
+
+
+  .search-results {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+	padding: 20px;
+	border-radius: 10px;
+	color: white;
+	max-height: 60%;
+	overflow-y: auto;
+	width: 80%;
+	z-index: 100;
+  }
+  
+  .search-result-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.8); /* Darker background for the cards */
+	margin-bottom: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.2); /* Softer border */
+  }
+  
+  .result-image {
+	width: 150px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-right: 15px;
+  }
+  
+  .result-details {
+	flex-grow: 1;
+	color: #e0e0e0; /* Slightly lighter text for better contrast */
+  }
+  
+  .result-title {
+	font-size: 1.3em;
+	font-weight: bold;
+  }
+  
+  .result-details p {
+	margin: 5px 0;
+  }
+  
+  a {
+	color: #1e90ff; /* Link color for Anilist */
+	text-decoration: none;
+	font-weight: bold;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }

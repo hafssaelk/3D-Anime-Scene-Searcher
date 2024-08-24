@@ -1,0 +1,79 @@
+/* Default styles for larger screens */
+.search-bar-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px 0;
+	position: fixed;
+	bottom: 60%; /* Adjust this as needed */
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+  }
+  
+  .search-form {
+	display: flex;
+	align-items: center;
+	background-color: #1e1e1e18;
+	padding: 10px 15px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .input-wrapper {
+	display: flex;
+	align-items: center;
+  }
+  
+  .search-input {
+	width: 300px; /* Adjust the width as needed */
+	padding: 10px;
+	border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+	border-radius: 5px;
+	background-color: rgba(241, 246, 248, 0.815); /* Fully transparent background */
+	color: #0a0303;
+	font-size: 16px;
+	outline: none;
+  }
+  
+  .file-label {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+  }
+  
+  .file-icon {
+	font-size: 24px; /* Adjust size as needed */
+	color: #ffcc00; /* Folder icon color */
+  }
+  
+  .file-input {
+	display: none; /* Hide the default file input */
+  }
+  
+  .invisible-button {
+	display: none;
+  }
+  
+  /* Media query for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+	.search-bar-container {
+	  bottom: 10%; /* Adjust for smaller screens */
+	  padding: 10px;
+	}
+  
+	.search-form {
+	  padding: 8px 10px; /* Adjust padding for smaller screens */
+	}
+  
+	.search-input {
+	  width: 100%; /* Full width for smaller screens */
+	  padding: 8px;
+	}
+  
+	.file-icon {
+	  font-size: 20px; /* Adjust icon size if needed */
+	}
+  }
+  
